@@ -17,6 +17,12 @@
 		26052FE6292A9D80004CF3E6 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FE5292A9D80004CF3E6 /* Extension+UIViewController.swift */; };
 		26052FE8292A9DB5004CF3E6 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FE7292A9DB5004CF3E6 /* Extension+UITableViewCell.swift */; };
 		26052FEA292A9DBF004CF3E6 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FE9292A9DBF004CF3E6 /* Extension+UITableView.swift */; };
+		26052FEF292A9E0A004CF3E6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FEE292A9E0A004CF3E6 /* Reachability.swift */; };
+		26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FF0292A9E24004CF3E6 /* HandleError.swift */; };
+		26052FF3292A9E37004CF3E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FF2292A9E37004CF3E6 /* HTTPMethod.swift */; };
+		26052FF5292A9E43004CF3E6 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FF4292A9E43004CF3E6 /* EndPoint.swift */; };
+		26052FF7292A9FC0004CF3E6 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FF6292A9FC0004CF3E6 /* IRequest.swift */; };
+		26052FF9292A9FD1004CF3E6 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FF8292A9FD1004CF3E6 /* HTTPRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		26052FE5292A9D80004CF3E6 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		26052FE7292A9DB5004CF3E6 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		26052FE9292A9DBF004CF3E6 /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		26052FEE292A9E0A004CF3E6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		26052FF0292A9E24004CF3E6 /* HandleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
+		26052FF2292A9E37004CF3E6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		26052FF4292A9E43004CF3E6 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		26052FF6292A9FC0004CF3E6 /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		26052FF8292A9FD1004CF3E6 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				26052FDC292A9BE4004CF3E6 /* Extensions */,
+				26052FEB292A9DF5004CF3E6 /* Networks */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -93,6 +106,19 @@
 				26052FE9292A9DBF004CF3E6 /* Extension+UITableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26052FEB292A9DF5004CF3E6 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				26052FEE292A9E0A004CF3E6 /* Reachability.swift */,
+				26052FF0292A9E24004CF3E6 /* HandleError.swift */,
+				26052FF2292A9E37004CF3E6 /* HTTPMethod.swift */,
+				26052FF4292A9E43004CF3E6 /* EndPoint.swift */,
+				26052FF6292A9FC0004CF3E6 /* IRequest.swift */,
+				26052FF8292A9FD1004CF3E6 /* HTTPRequest.swift */,
+			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +192,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				26052FE4292A9D62004CF3E6 /* Extension+UINavigationController.swift in Sources */,
+				26052FF7292A9FC0004CF3E6 /* IRequest.swift in Sources */,
 				26052FDE292A9CA2004CF3E6 /* Extension+Codable.swift in Sources */,
 				26052FE6292A9D80004CF3E6 /* Extension+UIViewController.swift in Sources */,
+				26052FF3292A9E37004CF3E6 /* HTTPMethod.swift in Sources */,
 				26052FE8292A9DB5004CF3E6 /* Extension+UITableViewCell.swift in Sources */,
+				26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */,
+				26052FF5292A9E43004CF3E6 /* EndPoint.swift in Sources */,
 				26052FE0292A9D03004CF3E6 /* Extension+UIApplication.swift in Sources */,
+				26052FEF292A9E0A004CF3E6 /* Reachability.swift in Sources */,
 				26052FE2292A9D32004CF3E6 /* Extension+UIView.swift in Sources */,
+				26052FF9292A9FD1004CF3E6 /* HTTPRequest.swift in Sources */,
 				26052FC8292A9998004CF3E6 /* AppDelegate.swift in Sources */,
 				26052FEA292A9DBF004CF3E6 /* Extension+UITableView.swift in Sources */,
 			);
