@@ -6,12 +6,25 @@
 //
 
 import Foundation
+import UIKit
 
-class LoginViewModel: ILoginViewModel {
+class LoginViewModel: ILoginViewModel, IModule {
     
     weak var view: ILoginView?
     let model = LoginModel()
     let request = HTTPRequest()
+    var router: IRouter
+    
+    init(appRouter: IRouter) {
+        self.router = appRouter
+    }
+    
+    func resolve(using params: [String : Any]) -> UIViewController {
+        let view = LoginView(viewModel: self)
+        self.setView(view)
+        
+        return view
+    }
     
     func setView(_ view: ILoginView) {
         self.view = view

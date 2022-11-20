@@ -31,6 +31,10 @@
 		2605300B292AA5D5004CF3E6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26053009292AA5D5004CF3E6 /* LoginView.xib */; };
 		2605300D292AA63D004CF3E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605300C292AA63D004CF3E6 /* LoginViewModel.swift */; };
 		2605300F292AA6DC004CF3E6 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605300E292AA6DC004CF3E6 /* LoginContract.swift */; };
+		26053012292AB075004CF3E6 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053011292AB075004CF3E6 /* IRouter.swift */; };
+		26053014292AB08D004CF3E6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053013292AB08D004CF3E6 /* AppRouter.swift */; };
+		26053016292AB09D004CF3E6 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053015292AB09D004CF3E6 /* IModule.swift */; };
+		26053018292AB0AF004CF3E6 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053017292AB0AF004CF3E6 /* FeatureModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,10 @@
 		26053009292AA5D5004CF3E6 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		2605300C292AA63D004CF3E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2605300E292AA6DC004CF3E6 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		26053011292AB075004CF3E6 /* IRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
+		26053013292AB08D004CF3E6 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		26053015292AB09D004CF3E6 /* IModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
+		26053017292AB0AF004CF3E6 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			children = (
 				26052FDC292A9BE4004CF3E6 /* Extensions */,
 				26052FEB292A9DF5004CF3E6 /* Networks */,
+				26053010292AB046004CF3E6 /* Routers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -167,6 +176,17 @@
 				26052FFF292AA320004CF3E6 /* LoginResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		26053010292AB046004CF3E6 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				26053011292AB075004CF3E6 /* IRouter.swift */,
+				26053013292AB08D004CF3E6 /* AppRouter.swift */,
+				26053015292AB09D004CF3E6 /* IModule.swift */,
+				26053017292AB0AF004CF3E6 /* FeatureModule.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26053012292AB075004CF3E6 /* IRouter.swift in Sources */,
 				26052FE4292A9D62004CF3E6 /* Extension+UINavigationController.swift in Sources */,
+				26053018292AB0AF004CF3E6 /* FeatureModule.swift in Sources */,
 				26052FF7292A9FC0004CF3E6 /* IRequest.swift in Sources */,
 				26052FDE292A9CA2004CF3E6 /* Extension+Codable.swift in Sources */,
 				26052FE6292A9D80004CF3E6 /* Extension+UIViewController.swift in Sources */,
@@ -248,6 +270,7 @@
 				26052FE8292A9DB5004CF3E6 /* Extension+UITableViewCell.swift in Sources */,
 				26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */,
 				26053003292AA3B8004CF3E6 /* ErrorResponse.swift in Sources */,
+				26053014292AB08D004CF3E6 /* AppRouter.swift in Sources */,
 				2605300D292AA63D004CF3E6 /* LoginViewModel.swift in Sources */,
 				26053005292AA3DB004CF3E6 /* BaseResponse.swift in Sources */,
 				26052FF5292A9E43004CF3E6 /* EndPoint.swift in Sources */,
@@ -261,6 +284,7 @@
 				2605300A292AA5D5004CF3E6 /* LoginView.swift in Sources */,
 				26052FC8292A9998004CF3E6 /* AppDelegate.swift in Sources */,
 				26052FEA292A9DBF004CF3E6 /* Extension+UITableView.swift in Sources */,
+				26053016292AB09D004CF3E6 /* IModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
