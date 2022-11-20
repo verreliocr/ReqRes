@@ -36,6 +36,8 @@
 		26053016292AB09D004CF3E6 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053015292AB09D004CF3E6 /* IModule.swift */; };
 		26053018292AB0AF004CF3E6 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053017292AB0AF004CF3E6 /* FeatureModule.swift */; };
 		2605301D292AB579004CF3E6 /* ListUserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605301C292AB579004CF3E6 /* ListUserContract.swift */; };
+		2605301F292ABCCF004CF3E6 /* UserItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605301E292ABCCF004CF3E6 /* UserItemObject.swift */; };
+		26053021292ABD35004CF3E6 /* ListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053020292ABD35004CF3E6 /* ListUserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		26053015292AB09D004CF3E6 /* IModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
 		26053017292AB0AF004CF3E6 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 		2605301C292AB579004CF3E6 /* ListUserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserContract.swift; sourceTree = "<group>"; };
+		2605301E292ABCCF004CF3E6 /* UserItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemObject.swift; sourceTree = "<group>"; };
+		26053020292ABD35004CF3E6 /* ListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				26053004292AA3DB004CF3E6 /* BaseResponse.swift */,
 				26053002292AA3B8004CF3E6 /* ErrorResponse.swift */,
 				26052FFF292AA320004CF3E6 /* LoginResponse.swift */,
+				2605301E292ABCCF004CF3E6 /* UserItemObject.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				2605301C292AB579004CF3E6 /* ListUserContract.swift */,
+				26053020292ABD35004CF3E6 /* ListUserModel.swift */,
 			);
 			path = "List Users";
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 				26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */,
 				26053003292AA3B8004CF3E6 /* ErrorResponse.swift in Sources */,
 				26053014292AB08D004CF3E6 /* AppRouter.swift in Sources */,
+				2605301F292ABCCF004CF3E6 /* UserItemObject.swift in Sources */,
 				2605300D292AA63D004CF3E6 /* LoginViewModel.swift in Sources */,
 				26053005292AA3DB004CF3E6 /* BaseResponse.swift in Sources */,
+				26053021292ABD35004CF3E6 /* ListUserModel.swift in Sources */,
 				26052FF5292A9E43004CF3E6 /* EndPoint.swift in Sources */,
 				2605301D292AB579004CF3E6 /* ListUserContract.swift in Sources */,
 				26052FE0292A9D03004CF3E6 /* Extension+UIApplication.swift in Sources */,
