@@ -47,11 +47,17 @@ class LoginViewModel: ILoginViewModel, IModule {
         return params
     }
     
+    private func navigateToListUsers() {
+        router.present(module: .listUser, asNavigation: true, using: [:])
+    }
+    
     private func didLogin() {
         request.call(.login, bodyParams: getLoginParams()) { data, type in
             if let res = LoginResponse.decode(from: data) {
-                print(res)
-                self.view?.showMessage("Log In Successful", title: "Info", completion: nil)
+                print(res.token ?? "")
+                self.view?.showMessage("Log In Successful", title: "Info", completion: {
+                    self.navigateToListUsers()
+                })
             }else if let type = type {
                 self.view?.handleError(type: type, retryAction: { [weak self] in
                     self?.didLogin()

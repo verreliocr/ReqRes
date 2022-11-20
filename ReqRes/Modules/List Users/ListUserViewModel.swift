@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SVProgressHUD
 
 class ListUserViewModel: IListUserViewModel, IModule {
     
@@ -31,7 +32,9 @@ class ListUserViewModel: IListUserViewModel, IModule {
     }
     
     private func getListUser() {
+        SVProgressHUD.show()
         request.call(.getListUser(page: "1"), bodyParams: [:]) { data, type in
+            SVProgressHUD.dismiss()
             if let res = BaseResponse<[UserItemObject]>.decode(from: data) {
                 self.model.users = res.data ?? []
                 self.view?.reloadView()
