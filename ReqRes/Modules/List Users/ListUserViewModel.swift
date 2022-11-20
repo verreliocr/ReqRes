@@ -31,23 +31,26 @@ class ListUserViewModel: IListUserViewModel, IModule {
         return view
     }
     
-    private func getListUser() {
+    private func getListUser(appendResult: Bool) {
         SVProgressHUD.show()
-        request.call(.getListUser(page: "1"), bodyParams: [:]) { data, type in
+        request.call(.getListUser(page: model.page), bodyParams: [:]) { [weak self] data, type in
             SVProgressHUD.dismiss()
             if let res = BaseResponse<[UserItemObject]>.decode(from: data) {
-                self.model.users = res.data ?? []
-                self.view?.reloadView()
+                if appendResult {
+                    self?.model.total = res.total ?? 0
+                    self?.model.users.append(contentsOf: res.data ?? [])
+                    self?.view?.reloadView()
+                }
             }else if let type = type {
-                self.view?.handleError(type: type, retryAction: { [weak self] in
-                    self?.getListUser()
+                self?.view?.handleError(type: type, retryAction: { [weak self] in
+                    self?.getListUser(appendResult: appendResult)
                 })
             }
         }
     }
     
     func viewLoaded() {
-        getListUser()
+        getListUser(appendResult: true)
     }
     
     func getNumberOfUsers() -> Int {
@@ -68,5 +71,12 @@ class ListUserViewModel: IListUserViewModel, IModule {
     
     func getEmail(for row: Int) -> String {
         return getUser(for: row).email ?? ""
+    }
+    
+    func willDisplayUser(for row: Int) {
+        if row == getNumberOfUsers() - 1, getNumberOfUsers() < model.total {
+            self.model.page += 1
+            self.getListUser(appendResult: true)
+        }
     }
 }

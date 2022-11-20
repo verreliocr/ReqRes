@@ -11,7 +11,7 @@ private let baseURL = "https://reqres.in/api"
 
 enum EndPoint {
     case login
-    case getListUser(page: String)
+    case getListUser(page: Int)
     
     var method: HTTPMethod {
         switch self {

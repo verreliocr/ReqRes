@@ -8,5 +8,7 @@
 import Foundation
 
 class ListUserModel {
+    var page: Int = 1
+    var total: Int = 0
     var users: [UserItemObject] = []
 }

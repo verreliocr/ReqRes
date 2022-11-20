@@ -70,7 +70,10 @@ extension ListUserView: IListUserView {
 }
 
 extension ListUserView: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        viewModel.willDisplayUser(for: row)
+    }
 }
 
 extension ListUserView: UITableViewDataSource {

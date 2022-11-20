@@ -20,4 +20,5 @@ protocol IListUserViewModel {
     func getAvatarUrl(for row: Int) -> String
     func getFullName(for row: Int) -> String
     func getEmail(for row: Int) -> String
+    func willDisplayUser(for row: Int)
 }
