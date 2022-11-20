@@ -26,6 +26,11 @@
 		26053000292AA320004CF3E6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26052FFF292AA320004CF3E6 /* LoginResponse.swift */; };
 		26053003292AA3B8004CF3E6 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053002292AA3B8004CF3E6 /* ErrorResponse.swift */; };
 		26053005292AA3DB004CF3E6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053004292AA3DB004CF3E6 /* BaseResponse.swift */; };
+		26053007292AA5B7004CF3E6 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053006292AA5B7004CF3E6 /* LoginModel.swift */; };
+		2605300A292AA5D5004CF3E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053008292AA5D5004CF3E6 /* LoginView.swift */; };
+		2605300B292AA5D5004CF3E6 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26053009292AA5D5004CF3E6 /* LoginView.xib */; };
+		2605300D292AA63D004CF3E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605300C292AA63D004CF3E6 /* LoginViewModel.swift */; };
+		2605300F292AA6DC004CF3E6 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605300E292AA6DC004CF3E6 /* LoginContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		26052FFF292AA320004CF3E6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		26053002292AA3B8004CF3E6 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		26053004292AA3DB004CF3E6 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		26053006292AA5B7004CF3E6 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		26053008292AA5D5004CF3E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		26053009292AA5D5004CF3E6 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		2605300C292AA63D004CF3E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2605300E292AA6DC004CF3E6 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,11 @@
 		26052FFE292AA312004CF3E6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2605300E292AA6DC004CF3E6 /* LoginContract.swift */,
+				26053006292AA5B7004CF3E6 /* LoginModel.swift */,
+				26053008292AA5D5004CF3E6 /* LoginView.swift */,
+				26053009292AA5D5004CF3E6 /* LoginView.xib */,
+				2605300C292AA63D004CF3E6 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -214,6 +229,7 @@
 			files = (
 				26052FD4292A9999004CF3E6 /* LaunchScreen.storyboard in Resources */,
 				26052FD1292A9999004CF3E6 /* Assets.xcassets in Resources */,
+				2605300B292AA5D5004CF3E6 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,13 +248,17 @@
 				26052FE8292A9DB5004CF3E6 /* Extension+UITableViewCell.swift in Sources */,
 				26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */,
 				26053003292AA3B8004CF3E6 /* ErrorResponse.swift in Sources */,
+				2605300D292AA63D004CF3E6 /* LoginViewModel.swift in Sources */,
 				26053005292AA3DB004CF3E6 /* BaseResponse.swift in Sources */,
 				26052FF5292A9E43004CF3E6 /* EndPoint.swift in Sources */,
 				26052FE0292A9D03004CF3E6 /* Extension+UIApplication.swift in Sources */,
 				26052FEF292A9E0A004CF3E6 /* Reachability.swift in Sources */,
+				2605300F292AA6DC004CF3E6 /* LoginContract.swift in Sources */,
 				26053000292AA320004CF3E6 /* LoginResponse.swift in Sources */,
+				26053007292AA5B7004CF3E6 /* LoginModel.swift in Sources */,
 				26052FE2292A9D32004CF3E6 /* Extension+UIView.swift in Sources */,
 				26052FF9292A9FD1004CF3E6 /* HTTPRequest.swift in Sources */,
+				2605300A292AA5D5004CF3E6 /* LoginView.swift in Sources */,
 				26052FC8292A9998004CF3E6 /* AppDelegate.swift in Sources */,
 				26052FEA292A9DBF004CF3E6 /* Extension+UITableView.swift in Sources */,
 			);
