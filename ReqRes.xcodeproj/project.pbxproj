@@ -40,6 +40,9 @@
 		26053021292ABD35004CF3E6 /* ListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053020292ABD35004CF3E6 /* ListUserModel.swift */; };
 		26053025292ABDA9004CF3E6 /* UserItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053023292ABDA9004CF3E6 /* UserItemTableCell.swift */; };
 		26053026292ABDA9004CF3E6 /* UserItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26053024292ABDA9004CF3E6 /* UserItemTableCell.xib */; };
+		26053028292AC249004CF3E6 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053027292AC249004CF3E6 /* Extension+UIImageView.swift */; };
+		2605302B292AC288004CF3E6 /* ListUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053029292AC288004CF3E6 /* ListUserView.swift */; };
+		2605302C292AC288004CF3E6 /* ListUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2605302A292AC288004CF3E6 /* ListUserView.xib */; };
 		63BBA75639D413006BE7358B /* Pods_ReqRes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493465597D86690C5339E45 /* Pods_ReqRes.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		26053020292ABD35004CF3E6 /* ListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserModel.swift; sourceTree = "<group>"; };
 		26053023292ABDA9004CF3E6 /* UserItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemTableCell.swift; sourceTree = "<group>"; };
 		26053024292ABDA9004CF3E6 /* UserItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserItemTableCell.xib; sourceTree = "<group>"; };
+		26053027292AC249004CF3E6 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		26053029292AC288004CF3E6 /* ListUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserView.swift; sourceTree = "<group>"; };
+		2605302A292AC288004CF3E6 /* ListUserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserView.xib; sourceTree = "<group>"; };
 		4EEF5F1318ED36CF90B8C17B /* Pods-ReqRes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReqRes.debug.xcconfig"; path = "Target Support Files/Pods-ReqRes/Pods-ReqRes.debug.xcconfig"; sourceTree = "<group>"; };
 		8493465597D86690C5339E45 /* Pods_ReqRes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReqRes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39D3FEF5C7D9E5E92D75EE /* Pods-ReqRes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReqRes.release.xcconfig"; path = "Target Support Files/Pods-ReqRes/Pods-ReqRes.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 				26052FE1292A9D32004CF3E6 /* Extension+UIView.swift */,
 				26052FE7292A9DB5004CF3E6 /* Extension+UITableViewCell.swift */,
 				26052FE9292A9DBF004CF3E6 /* Extension+UITableView.swift */,
+				26053027292AC249004CF3E6 /* Extension+UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +221,8 @@
 				26053022292ABD8C004CF3E6 /* Cells */,
 				2605301C292AB579004CF3E6 /* ListUserContract.swift */,
 				26053020292ABD35004CF3E6 /* ListUserModel.swift */,
+				26053029292AC288004CF3E6 /* ListUserView.swift */,
+				2605302A292AC288004CF3E6 /* ListUserView.xib */,
 			);
 			path = "List Users";
 			sourceTree = "<group>";
@@ -241,7 +250,6 @@
 				4EEF5F1318ED36CF90B8C17B /* Pods-ReqRes.debug.xcconfig */,
 				CC39D3FEF5C7D9E5E92D75EE /* Pods-ReqRes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -305,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2605302C292AC288004CF3E6 /* ListUserView.xib in Resources */,
 				26053026292ABDA9004CF3E6 /* UserItemTableCell.xib in Resources */,
 				26052FD4292A9999004CF3E6 /* LaunchScreen.storyboard in Resources */,
 				26052FD1292A9999004CF3E6 /* Assets.xcassets in Resources */,
@@ -382,7 +391,9 @@
 				26052FE0292A9D03004CF3E6 /* Extension+UIApplication.swift in Sources */,
 				26052FEF292A9E0A004CF3E6 /* Reachability.swift in Sources */,
 				2605300F292AA6DC004CF3E6 /* LoginContract.swift in Sources */,
+				2605302B292AC288004CF3E6 /* ListUserView.swift in Sources */,
 				26053000292AA320004CF3E6 /* LoginResponse.swift in Sources */,
+				26053028292AC249004CF3E6 /* Extension+UIImageView.swift in Sources */,
 				26053007292AA5B7004CF3E6 /* LoginModel.swift in Sources */,
 				26052FE2292A9D32004CF3E6 /* Extension+UIView.swift in Sources */,
 				26052FF9292A9FD1004CF3E6 /* HTTPRequest.swift in Sources */,
