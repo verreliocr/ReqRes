@@ -38,6 +38,8 @@
 		2605301D292AB579004CF3E6 /* ListUserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605301C292AB579004CF3E6 /* ListUserContract.swift */; };
 		2605301F292ABCCF004CF3E6 /* UserItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605301E292ABCCF004CF3E6 /* UserItemObject.swift */; };
 		26053021292ABD35004CF3E6 /* ListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053020292ABD35004CF3E6 /* ListUserModel.swift */; };
+		26053025292ABDA9004CF3E6 /* UserItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053023292ABDA9004CF3E6 /* UserItemTableCell.swift */; };
+		26053026292ABDA9004CF3E6 /* UserItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26053024292ABDA9004CF3E6 /* UserItemTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		2605301C292AB579004CF3E6 /* ListUserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserContract.swift; sourceTree = "<group>"; };
 		2605301E292ABCCF004CF3E6 /* UserItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemObject.swift; sourceTree = "<group>"; };
 		26053020292ABD35004CF3E6 /* ListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserModel.swift; sourceTree = "<group>"; };
+		26053023292ABDA9004CF3E6 /* UserItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemTableCell.swift; sourceTree = "<group>"; };
+		26053024292ABDA9004CF3E6 /* UserItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserItemTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,10 +204,20 @@
 		2605301B292AB436004CF3E6 /* List Users */ = {
 			isa = PBXGroup;
 			children = (
+				26053022292ABD8C004CF3E6 /* Cells */,
 				2605301C292AB579004CF3E6 /* ListUserContract.swift */,
 				26053020292ABD35004CF3E6 /* ListUserModel.swift */,
 			);
 			path = "List Users";
+			sourceTree = "<group>";
+		};
+		26053022292ABD8C004CF3E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26053023292ABDA9004CF3E6 /* UserItemTableCell.swift */,
+				26053024292ABDA9004CF3E6 /* UserItemTableCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26053026292ABDA9004CF3E6 /* UserItemTableCell.xib in Resources */,
 				26052FD4292A9999004CF3E6 /* LaunchScreen.storyboard in Resources */,
 				26052FD1292A9999004CF3E6 /* Assets.xcassets in Resources */,
 				2605300B292AA5D5004CF3E6 /* LoginView.xib in Resources */,
@@ -284,6 +299,7 @@
 				26052FDE292A9CA2004CF3E6 /* Extension+Codable.swift in Sources */,
 				26052FE6292A9D80004CF3E6 /* Extension+UIViewController.swift in Sources */,
 				26052FF3292A9E37004CF3E6 /* HTTPMethod.swift in Sources */,
+				26053025292ABDA9004CF3E6 /* UserItemTableCell.swift in Sources */,
 				26052FE8292A9DB5004CF3E6 /* Extension+UITableViewCell.swift in Sources */,
 				26052FF1292A9E24004CF3E6 /* HandleError.swift in Sources */,
 				26053003292AA3B8004CF3E6 /* ErrorResponse.swift in Sources */,
