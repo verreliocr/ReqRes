@@ -8,6 +8,17 @@
 import UIKit
 
 class ListUserView: UIViewController {
+    
+    let viewModel: IListUserViewModel
+    
+    init(viewModel: IListUserViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "ListUserView", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     @IBOutlet weak var listUserTableView: UITableView!
     

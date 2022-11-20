@@ -19,15 +19,15 @@ class LoginViewModel: ILoginViewModel, IModule {
         self.router = appRouter
     }
     
+    func setView(_ view: ILoginView) {
+        self.view = view
+    }
+    
     func resolve(using params: [String : Any]) -> UIViewController {
         let view = LoginView(viewModel: self)
         self.setView(view)
         
         return view
-    }
-    
-    func setView(_ view: ILoginView) {
-        self.view = view
     }
     
     func setEmail(_ value: String) {

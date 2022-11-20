@@ -43,6 +43,7 @@
 		26053028292AC249004CF3E6 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053027292AC249004CF3E6 /* Extension+UIImageView.swift */; };
 		2605302B292AC288004CF3E6 /* ListUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053029292AC288004CF3E6 /* ListUserView.swift */; };
 		2605302C292AC288004CF3E6 /* ListUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2605302A292AC288004CF3E6 /* ListUserView.xib */; };
+		2605302E292AC459004CF3E6 /* ListUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605302D292AC459004CF3E6 /* ListUserViewModel.swift */; };
 		63BBA75639D413006BE7358B /* Pods_ReqRes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493465597D86690C5339E45 /* Pods_ReqRes.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		26053027292AC249004CF3E6 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		26053029292AC288004CF3E6 /* ListUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserView.swift; sourceTree = "<group>"; };
 		2605302A292AC288004CF3E6 /* ListUserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserView.xib; sourceTree = "<group>"; };
+		2605302D292AC459004CF3E6 /* ListUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserViewModel.swift; sourceTree = "<group>"; };
 		4EEF5F1318ED36CF90B8C17B /* Pods-ReqRes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReqRes.debug.xcconfig"; path = "Target Support Files/Pods-ReqRes/Pods-ReqRes.debug.xcconfig"; sourceTree = "<group>"; };
 		8493465597D86690C5339E45 /* Pods_ReqRes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReqRes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39D3FEF5C7D9E5E92D75EE /* Pods-ReqRes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReqRes.release.xcconfig"; path = "Target Support Files/Pods-ReqRes/Pods-ReqRes.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				26053020292ABD35004CF3E6 /* ListUserModel.swift */,
 				26053029292AC288004CF3E6 /* ListUserView.swift */,
 				2605302A292AC288004CF3E6 /* ListUserView.xib */,
+				2605302D292AC459004CF3E6 /* ListUserViewModel.swift */,
 			);
 			path = "List Users";
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				26053000292AA320004CF3E6 /* LoginResponse.swift in Sources */,
 				26053028292AC249004CF3E6 /* Extension+UIImageView.swift in Sources */,
 				26053007292AA5B7004CF3E6 /* LoginModel.swift in Sources */,
+				2605302E292AC459004CF3E6 /* ListUserViewModel.swift in Sources */,
 				26052FE2292A9D32004CF3E6 /* Extension+UIView.swift in Sources */,
 				26052FF9292A9FD1004CF3E6 /* HTTPRequest.swift in Sources */,
 				2605300A292AA5D5004CF3E6 /* LoginView.swift in Sources */,
