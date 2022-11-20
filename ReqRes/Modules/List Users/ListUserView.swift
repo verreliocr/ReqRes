@@ -25,6 +25,7 @@ class ListUserView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        viewModel.viewLoaded()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,11 +78,18 @@ extension ListUserView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.getNumberOfUsers()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell: UserItemTableCell = tableView.dequeueReusableCell() {
+            
+            let row = indexPath.row
+            
+            cell.bind(avatarUrl: viewModel.getAvatarUrl(for: row),
+                      name: viewModel.getFullName(for: row),
+                      email: viewModel.getEmail(for: row))
+            
             return cell
         }
         
